@@ -141,6 +141,15 @@ main > p {
   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
+.contact-info {
+  text-align: center;       /* center align text */
+  font-weight: bold;        /* make text bold */
+  font-size: 18px;          /* adjust text size */
+  line-height: 1.6;         /* space between lines */
+  margin-top: 30px;         /* push it down below header */
+}
+
+
 
 
 
