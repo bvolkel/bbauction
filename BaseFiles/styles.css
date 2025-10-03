@@ -1,0 +1,147 @@
+/* Existing styles */
+.header {
+    background-color: red; /* This will be overridden by background-image */
+    padding: 100px;
+    text-align: center;
+    color: white; /* Text color */
+    background-image: url('/images/sheriff.png'); /* Background image for header */
+    background-size: cover; /* Cover the whole header */
+    background-repeat: no-repeat;
+    background-position: center 25%; /* Center the background image */
+    position: relative; /* For overlay effect, if needed */
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em; /* Large font size for desktop */
+}
+
+p {
+    margin: 10px 0 0 0; /* Adjusts the margin around the <p> tag */
+    font-size: 2.2em; /* Large font size for desktop */
+    text-align: center;
+}
+
+main > p {
+    margin: 10px 0 0 0;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.nav-item {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 2px; /* Spacing between buttons */
+    font-size: 2em; /* Large font size for desktop */
+}
+
+.nav-item:hover {
+    background-color: #333; /* Darker shade for hover effect */
+}
+
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; /* Adjust the width as needed */
+}
+
+.centered-table th,
+.centered-table td {
+    text-align: center; /* Centers the text in table cells */
+    font-size: xx-large;
+}
+
+
+/* New styles for mobile responsiveness */
+@media (max-width: 600px) {
+    .header {
+        padding: 20px; /* Reduced padding for small screens */
+        /* The background image will scale down appropriately due to 'background-size: cover;' */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller font size for h1 on small screens */
+    }
+
+    p {
+        font-size: 1em; /* Smaller font size for paragraphs on small screens */
+    }
+
+    .nav-item {
+        padding: 5px 10px; /* Reduced padding for navigation items */
+        font-size: 1em; /* Smaller font size for navigation links */
+        margin: 2px 0; /* Adjusted margin for stacked navigation items */
+        display: block; /* Stack navigation items vertically */
+    }
+
+    .centered-table {
+        width: 100%; /* Full width for the table on small screens */
+    }
+
+    @media (max-width: 600px) {
+        .flex-container {
+            flex-direction: column; /* Stacks images vertically on smaller screens */
+        }
+    }
+    
+
+/* This section is for the image galary*/
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Adds space between the items */
+}
+
+
+
+}
+
+.upcomingsales a {
+    display: block;               /* stack vertically */
+    margin: 10px 0;               /* space between buttons */
+    padding: 12px 18px;           /* inside spacing */
+    border: 2px solid #000;       /* black border rectangle */
+    border-radius: 6px;           /* slightly rounded corners */
+    background-color: #f9f9f9;    /* light background */
+    color: #000;                  /* text color */
+    text-decoration: none;        /* no underline */
+    font-size: 18px;
+    transition: 0.3s;             /* smooth hover */
+}
+
+.upcomingsales a:hover {
+    background-color: #e6e6e6;    /* subtle hover effect */
+    color: #b22222;               /* text turns dark red */
+    border-color: #b22222;        /* border changes color */
+}
+
+/* Visitor Counter Box Styling */
+#counter-box {
+  position: fixed;          /* sticks to viewport */
+  bottom: 20px;             /* distance from bottom */
+  left: 50%;                /* place in middle horizontally */
+  transform: translateX(-50%); /* true horizontal center */
+  
+  padding: 15px;
+  border: 2px solid #000;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+
