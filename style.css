@@ -105,17 +105,24 @@ main > p {
 
 }
 
+.upcomingsales {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .upcomingsales a {
-    display: block;               /* stack vertically */
-    margin: 10px 0;               /* space between buttons */
-    padding: 12px 18px;           /* inside spacing */
-    border: 2px solid #000;       /* black border rectangle */
-    border-radius: 6px;           /* slightly rounded corners */
-    background-color: #f9f9f9;    /* light background */
-    color: #000;                  /* text color */
-    text-decoration: none;        /* no underline */
+    display: block;               /* makes each button take its own line */
+    width: 60%;                   /* adjust width as you like */
+    margin: 10px auto;            /* centers the button horizontally */
+    padding: 12px 0;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
     font-size: 18px;
-    transition: 0.3s;             /* smooth hover */
+    transition: all 0.3s ease;
+    text-align: center;           /* centers the text inside the button */
 }
 
 .upcomingsales a:hover {
@@ -123,6 +130,9 @@ main > p {
     color: #b22222;               /* text turns dark red */
     border-color: #b22222;        /* border changes color */
 }
+
+
+
 
 /* Visitor Counter Box Styling */
 #counter-box {
