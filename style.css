@@ -4,7 +4,7 @@
     padding: 100px;
     text-align: center;
     color: white; /* Text color */
-    background-image: url('/images/sheriff.png'); /* Background image for header */
+    background-image: url('sheriff.png'); /* Background image for header */
     background-size: cover; /* Cover the whole header */
     background-repeat: no-repeat;
     background-position: center 25%; /* Center the background image */
@@ -149,6 +149,18 @@ main > p {
   margin-top: 30px;         /* push it down below header */
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo-container img {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px; /* optional, gives rounded corners */
+}
 
 
 
