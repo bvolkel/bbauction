@@ -162,6 +162,30 @@ main > p {
     border-radius: 8px; /* optional, gives rounded corners */
 }
 
+.sale-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center; /* optional */
+}
+
+.divider {
+  height: 6px;
+  background-color: black;
+  border: none;
+  margin: 30px 0;
+}
+
+.item-list {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #222;
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: left;
+}
+
 
 
 
