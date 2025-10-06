@@ -17,6 +17,7 @@ h1 {
     font-size: 4.5em; /* Large font size for desktop */
 }
 
+
 p {
     margin: 10px 0 0 0; /* Adjusts the margin around the <p> tag */
     font-size: 2.2em; /* Large font size for desktop */
@@ -212,6 +213,17 @@ main > p {
     color: #b22222; /* turns red when hovered */
     transform: scale(1.1);
 }
+
+/*used for header Brian J. Bellendir */
+.highlight-name {
+    font-weight: bold;          /* makes it bold */
+    font-size: 2.5em;           /* larger text */
+    color: #b22222;             /* deep red to match your auction theme */
+    text-align: center;         /* centers it */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* subtle pop effect */
+    margin-top: 20px;
+}
+
 
 
 

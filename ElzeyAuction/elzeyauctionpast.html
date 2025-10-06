@@ -27,6 +27,7 @@
 <body>
     <div class="header">
         <h1>B & B Auction Company LLC</h1>
+        <h2 class="highlight-name">Brian J. Bellendir</h2>
         <p>"THE SOUND THAT SELLS"</p>
         <!-- Navigation -->
         <div class="navigation">
@@ -36,6 +37,98 @@
             <a href="../contactus.html" class="nav-item">Contact</a>
         </div>
     </div>
+
+
+
+
+    <p><strong>Firearms-Ammo-Reloading Supplies-Coins-Bullion -Tractor-Trailers-Antiques-CollectiblesTools-Shop Equipment</strong></p>
+
+    <!--Carousel-->
+
+    <!-- ✅ DROP-IN CAROUSEL -->
+<div class="carousel-container" id="auctionCarousel">
+  <div class="carousel-slide active">
+    <img src="../ElzeyAuction/500.avif" alt="Photo 1">
+  </div>
+  <div class="carousel-slide">
+    <img src="../ElzeyAuction/oldlanterns.avif" alt="Photo 2">
+  </div>
+  <div class="carousel-slide">
+    <img src="../ElzeyAuction/oldtractor.avif" alt="Photo 3">
+  </div>
+  <div class="carousel-slide">
+    <img src="../ElzeyAuction/snaponbox.avif" alt="Photo 4">
+  </div>
+
+  <!-- Arrows -->
+  <button class="prev" type="button" aria-label="Previous">&#10094;</button>
+  <button class="next" type="button" aria-label="Next">&#10095;</button>
+</div>
+
+<!-- Dots -->
+<div class="carousel-dots">
+  <button class="dot active" aria-label="Slide 1"></button>
+  <button class="dot" aria-label="Slide 2"></button>
+  <button class="dot" aria-label="Slide 3"></button>
+  <button class="dot" aria-label="Slide 4"></button>
+</div>
+
+<style>
+  .carousel-container{
+    max-width:700px; position:relative; margin:40px auto;
+    border:3px solid #b22222; border-radius:10px; overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+  }
+  /* Hide all slides; show only the .active one */
+  .carousel-slide{ display:none; }
+  .carousel-slide.active{ display:block; }
+
+  .carousel-slide img{ width:100%; display:block; border-radius:10px; }
+
+  .prev,.next{
+    cursor:pointer; position:absolute; top:50%; transform:translateY(-50%);
+    padding:16px; color:#fff; font-weight:bold; font-size:24px; background:rgba(0,0,0,.4);
+    border:none; border-radius:6px; transition:.3s;
+  }
+  .prev{ left:10px; } .next{ right:10px; }
+  .prev:hover,.next:hover{ background:#b22222; }
+
+  .carousel-dots{ text-align:center; margin-top:10px; }
+  .dot{
+    width:12px; height:12px; margin:0 4px; border-radius:50%; border:none; display:inline-block;
+    background:#bbb; cursor:pointer; transition:background-color .3s;
+  }
+  .dot.active,.dot:hover{ background:#b22222; }
+</style>
+
+<script>
+  // Run AFTER the DOM is ready
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.getElementById('auctionCarousel');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prev = carousel.querySelector('.prev');
+    const next = carousel.querySelector('.next');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+
+    // Ensure at least one active slide
+    let index = [...slides].findIndex(s => s.classList.contains('active'));
+    if (index < 0) { slides[0].classList.add('active'); dots[0]?.classList.add('active'); index = 0; }
+
+    function setActive(newIndex){
+      slides[index].classList.remove('active');
+      dots[index]?.classList.remove('active');
+      index = (newIndex + slides.length) % slides.length;
+      slides[index].classList.add('active');
+      dots[index]?.classList.add('active');
+    }
+
+    prev.addEventListener('click', () => setActive(index - 1));
+    next.addEventListener('click', () => setActive(index + 1));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => setActive(i)));
+  });
+</script>
+
+
 
     <div style="display: flex; justify-content: no-space-between; margin-top: 20px;">
     <img src="500.avif" alt="Image 1" style="width: 35%; height: auto;">
