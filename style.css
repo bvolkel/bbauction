@@ -136,20 +136,19 @@ main > p {
 
 /* Visitor Counter Box Styling */
 #counter-box {
-  position: fixed;          /* sticks to viewport */
-  bottom: 20px;             /* distance from bottom */
-  left: 50%;                /* place in middle horizontally */
-  transform: translateX(-50%); /* true horizontal center */
-  
-  padding: 15px;
-  border: 2px solid #000;
-  width: fit-content;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: #f9f9f9;
-  border-radius: 6px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    position: relative;        /* keeps it in normal page flow */
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 30px auto;          /* centers it horizontally */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
 }
+
 
 .contact-info {
   text-align: center;       /* center align text */
@@ -196,6 +195,23 @@ main > p {
   text-align: left;
 }
 
+/*Facebook hoover link */
+.facebook-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.facebook-link a {
+    color: #1877f2; /* Facebook blue */
+    font-size: 90px; /* makes it big */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.facebook-link a:hover {
+    color: #b22222; /* turns red when hovered */
+    transform: scale(1.1);
+}
 
 
 

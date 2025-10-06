@@ -68,34 +68,39 @@
     <img src="auctionhouse2.avif" alt="Image 2" style="width: 48%; height: auto;">
 </div>
 
-<!-- Visitor Counter Box -->
-  <div id="counter-box">
-    Visitor Count: <span id="visitorCount"></span>
-  </div>
+<!--For the facebook logo-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <script>
-    // starting number
-    let startCount = 65423;
+  <div class="facebook-link">
+    <a href="https://www.facebook.com/people/BB-Auction-Co-LLC/100064791700181/" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+    </a>
+</div>
 
-    // get stored value or start fresh
-    let visitorCount = localStorage.getItem("visitorCount");
-    if (!visitorCount) {
-      visitorCount = startCount;
-    } else {
-      visitorCount = parseInt(visitorCount) + 1; // increase on reload
-    }
 
-    // save updated count
-    localStorage.setItem("visitorCount", visitorCount);
 
-    // show it on page
-    document.getElementById("visitorCount").textContent = visitorCount;
-  </script>
 
 
 
 <footer>
     <a href="SignedLogo.jpg"><img src="SignedLogo.jpg" width="50px" height="40px"></a> &copy;2024-BAV Design Elements
+    <!-- Visitor Counter Box -->
+<div id="counter-box">
+  Visitor Count: <span id="visitorCount"></span>
+</div>
+
+<script>
+  let startCount = 65423;
+  let visitorCount = localStorage.getItem("visitorCount");
+  if (!visitorCount) {
+    visitorCount = startCount;
+  } else {
+    visitorCount = parseInt(visitorCount) + 1;
+  }
+  localStorage.setItem("visitorCount", visitorCount);
+  document.getElementById("visitorCount").textContent = visitorCount;
+</script>
+
 </footer>
 </body>
 </html>
